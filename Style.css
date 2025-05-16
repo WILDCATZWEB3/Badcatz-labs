@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background: #1f1f1f;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e03e3e;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #e03e3e;
+}
+
+.header p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e03e3e;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #b82c2c;
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e03e3e;
+}
+
+/* Roadmap List */
+.roadmap ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.roadmap li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* FAQ Section */
+.faq details {
+  background: #222;
+  border-radius: 6px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.faq details[open] {
+  background: #333;
+}
+
+.faq summary {
+  font-weight: 700;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::before {
+  content: "►";
+  color: #e03e3e;
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.faq details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+/* Twitter Feed */
+.twitter-feed a.twitter-timeline {
+  width: 100% !important;
+  min-height: 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+  color: #888;
+  font-size: 0.9rem;
+}
